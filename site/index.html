@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHYLAX - Проект игры</title>
+    <style>
+        /* Палитра "Туманный лес": серо-сине-зеленые оттенки */
+        body {
+            background-color: #0b1114; /* Глубокий темный, почти графитовый с синим подтоном */
+            background-image: linear-gradient(rgba(11, 17, 20, 0.85), rgba(11, 17, 20, 0.85)), url('image_a8a751.jpg');
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            color: #cfd8dc; /* Светло-серый с голубоватым отливом */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: rgba(10, 18, 22, 0.95);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 2px solid #263238;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #78909c; /* Приглушенный серо-голубой */
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.1em;
+            color: #546e7a; /* Цвет туманной дымки */
+        }
+
+        nav {
+            background-color: #1c272b; /* Цвет мокрого камня */
+            padding: 15px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #37474f;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 0.9em;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #90a4ae;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        section {
+            background-color: rgba(30, 43, 49, 0.9); /* Темная морская волна, уходящая в серый */
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border: 1px solid #37474f;
+        }
+
+        h2 {
+            color: #90a4ae; /* Светлый туманный оттенок */
+            border-bottom: 1px solid #37474f;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+
+        .content-img {
+            width: 100%;
+            height: auto;
+            border-radius: 4px;
+            margin: 20px 0;
+            display: block;
+            border: 1px solid #37474f;
+            filter: grayscale(10%) contrast(105%); /* Легкий эффект для атмосферы */
+        }
+
+        /* Галерея */
+        .gallery {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+        }
+
+        .gallery img {
+            height: 150px;
+            width: auto;
+            border-radius: 4px;
+            border: 1px solid #37474f;
+        }
+
+        /* Команда */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .member-card {
+            background-color: rgba(22, 33, 39, 0.95);
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid #37474f;
+        }
+
+        .member-card h4 {
+            margin: 0 0 5px 0;
+            color: #eceff1;
+        }
+
+        .member-card p {
+            font-size: 0.8em;
+            margin: 3px 0;
+            color: #90a4ae;
+        }
+
+        /* Журнал */
+        .log-entry {
+            background-color: rgba(28, 40, 46, 0.75);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border-left: 5px solid #546e7a;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #455a64;
+            font-size: 0.9em;
+            background-color: #0b1114;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Цвет выделения текста */
+        ::selection {
+            background: #455a64;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>PHYLAX (Forest Ranger)</h1>
+        <p>Студенческий проект мобильной игры с элементами детектива</p>
+    </header>
+
+    <nav>
+        <a href="#home">Аннотация</a>
+        <a href="#about">О проекте</a>
+        <a href="#team">Команда</a>
+        <a href="#journal">Журнал</a>
+        <a href="#resources">Ресурсы</a>
+    </nav>
+
+    <div class="container">
+        
+        <!-- Аннотация -->
+        <section id="home">
+            <h2>Аннотация</h2>
+            <p>PHYLAX — это мобильное стелс-приключение с элементами детектива. Игра предлагает иммерсивный геймплей который побуждает исследования и погружение.</p>
+            <img src="image_d8a493.jpg" alt="[Концепт-арт PHYLAX]" class="content-img">
+        </section>
+
+        <!-- О проекте -->
+        <section id="about">
+            <h2>О проекте</h2>
+            <p><strong>Жанр:</strong> Симулятор, Приключение, Детектив.</p>
+            <p><strong>Сюжет:</strong> Главный герой противостоит банде браконьеров «Чёрные следопыты». Их основная задача — завладеть заповедником отца и открыть свой охотничий клуб, а также продать доступ к аномалии «Тропа Древних», которая является главной тайной леса.</p>
+            
+            <img src="image_d899f4.jpg" alt="[Сюжетный арт]" class="content-img">
+
+            <h3>Ключевые особенности:</h3>
+            <ul>
+                <li>Система патрулирования территории.</li>
+                <li>Взаимодействие с фауной леса.</li>
+                <li>Две разные концовки в зависимости от выбора игрока.</li>
+                <li>Ощущение открытого мира.</li>
+            </ul>
+        </section>
+
+        <!-- Команда -->
+        <section id="team">
+            <h2>Наша команда</h2>
+            <div class="team-grid">
+                <div class="member-card"><h4>Дмитриев Кирилл Денисович</h4><p>Роль: тест(абзац)</p><p>Вклад: тест</p></div>
+                <div class="member-card"><h4>Титова Анна Александровна</h4><p>Роль: тест(абзац)</p><p>Вклад: тест</p></div>
+                <div class="member-card"><h4>Тишина Кира Константиновна</h4><p>Роль: тест(абзац)</p><p>Вклад: тест</p></div>
+                <div class="member-card"><h4>Баляева Марьяна Денисовна</h4><p>Роль: тест(абзац)</p><p>Вклад: тест</p></div>
+                <div class="member-card"><h4>Мурин Игорь Игоревич</h4><p>Роль: тест(абзац)</p><p>Вклад: тест</p></div>
+                <div class="member-card"><h4>Томашева Анна Владимировна</h4><p>Роль: тест(абзац)</p><p>Вклад: тест</p></div>
+                <div class="member-card"><h4>Чиканчи Ирина Викторовна</h4><p>Роль: тест(абзац)</p><p>Вклад: тест</p></div>
+                <div class="member-card"><h4>Степанов Станислав Сергеевич</h4><p>Роль: тест(абзац)</p><p>Вклад: тест</p></div>
+                <div class="member-card"><h4>Бондарчук Владимир Олегович</h4><p>Роль: тест(абзац)</p><p>Вклад: тест</p></div>
+                <div class="member-card"><h4>Воловик Дарья Сергеевна</h4><p>Роль: тест(абзац)</p><p>Вклад: тест</p></div>
+                <div class="member-card"><h4>Гридчина Анна Александровна</h4><p>Роль: тест(абзац)</p><p>Вклад: тест</p></div>
+                <div class="member-card"><h4>Жирнов Артем Михайлович</h4><p>Роль: тест(абзац)</p><p>Вклад: тест</p></div>
+                <div class="member-card"><h4>Искоростинская Мария Алексеевна</h4><p>Роль: тест(абзац)</p><p>Вклад: тест</p></div>
+                <div class="member-card"><h4>Казакова Диана Александровна</h4><p>Роль: тест(абзац)</p><p>Вклад: тест</p></div>
+                <div class="member-card"><h4>Кирсанова Александра Олеговна</h4><p>Роль: тест(абзац)</p><p>Вклад: тест</p></div>
+                <div class="member-card"><h4>Опарин Георгий Игоревич</h4><p>Роль: тест(абзац)</p><p>Вклад: тест</p></div>
+                <div class="member-card"><h4>Рябчук Иван Денисович</h4><p>Роль: тест(абзац)</p><p>Вклад: тест</p></div>
+                <div class="member-card"><h4>Семисынов Егор Дмитриевич</h4><p>Роль: тест(абзац)</p><p>Вклад: тест</p></div>
+                <div class="member-card"><h4>Ситникова Валерия Владимировна</h4><p>Роль: тест(абзац)</p><p>Вклад: тест</p></div>
+                <div class="member-card"><h4>Соколов Демьян Евгеньевич</h4><p>Роль: тест(абзац)</p><p>Вклад: тест</p></div>
+            </div>
+        </section>
+
+        <!-- Журнал -->
+        <section id="journal">
+            <h2>Журнал работы</h2>
+            
+            <div class="log-entry">
+                <h3>Этап 1: Проработка идеи и создание концепт артов</h3>
+                <p>Определились с основной идеей и жанром игры и устроили мозговой штурм по поводу идей для реализации.</p>
+                <div class="gallery">
+                    <img src="image_d892aa.png" alt="[Концепт 1]">
+                    <img src="image_d8920d.jpg" alt="[Концепт 2]">
+                    <img src="image_d891b6.jpg" alt="[Концепт 3]">
+                </div>
+            </div>
+
+            <div class="log-entry">
+                <h3>Этап 2: Проработка ключевых механик</h3>
+                <p>После, нужно было определиться с тем, что удержит игрока в игре. Были продуманы интересные механики для геймплея и вознаграждения за них.</p>
+                <div class="gallery">
+                    <img src="image_d88a6b.jpg" alt="[Механики]">
+                </div>
+            </div>
+
+            <div class="log-entry">
+                <h3>Этап 3: Создание фейкшотов и in-game ассетов</h3>
+                <p>Для исправной работы программистов, нужны были готовые ассеты и изображения того, как игра выглядела бы для игрока.</p>
+                <div class="gallery">
+                    <img src="Снимок экрана (1579).jpg" alt="[Фейкшот 1]">
+                    <img src="image_d83074.png" alt="[Фейкшот 2]">
+                </div>
+            </div>
+        </section>
+
+        <!-- Ресурсы -->
+        <section id="resources">
+            <h2>Ресурсы и материалы</h2>
+            <p>тест</p>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>тест</p>
+    </footer>
+
+</body>
+</html>
