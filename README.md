@@ -11,7 +11,7 @@
 
 ## Сайт по ПД
 
-Сайт проекта по ПД размещен в файле [virtual-lab.html](site/virtual-lab.html).
+Сайт проекта по ПД размещен в папке **site** в файле [virtual-lab.html](site/virtual-lab.html).
 
 ## Вариативная часть задания
 
@@ -30,3 +30,7 @@ Game: C++: Tetris tutorial in C++ platform independent focused in game logic for
 ## Период проведения
 
 С 03 февраля 2026 г. по 24 мая 2026 г.
+
+## Отчёт
+
+Отчёт по практике размещен в папке **reports** в файлах [report.docx](reports/report.docx) и [report.pdf](reports/report.pdf).
