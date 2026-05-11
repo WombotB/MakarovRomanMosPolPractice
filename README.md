@@ -26,6 +26,10 @@
 
 С 03 февраля 2026 г. по 24 мая 2026 г.
 
+## Документация
+
+Документация размещена в папке **docs** в файле [README.md](docs/README.md) и других.
+
 ## Отчёт
 
 Отчёт по практике размещен в папке **reports** в файлах [report.docx](reports/report.docx) и [report.pdf](reports/report.pdf).
