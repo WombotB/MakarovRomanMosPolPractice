@@ -13,10 +13,6 @@
 
 Сайт проекта по ПД размещен в папке **site** в файле [virtual-lab.html](site/virtual-lab.html).
 
-## Вариативная часть задания
-
-Game: C++: Tetris tutorial in C++ platform independent focused in game logic for beginners
-
 ## Ответственный по проектной (учебной) практике
 
 Семенова Валерия Валерьевна.
