@@ -1,4 +1,4 @@
-# Приложения
+# ПРИЛОЖЕНИЯ
 ### Скриншоты страниц веб-сайта (главная, о проекте, участники, журнал, ресурсы).
 1. <img width="1064" height="569" alt="image" src="https://github.com/user-attachments/assets/5f687ed5-e70a-4e9c-b692-da624c7bad62" />
 2. <img width="1064" height="565" alt="image" src="https://github.com/user-attachments/assets/c6bcdea7-b0ac-4810-9887-40c520eaeda2" />
