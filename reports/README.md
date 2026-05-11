@@ -1,5 +1,4 @@
 # Отчёты в бинарных форматах
 
-- В этот файл добавьте ссылки на файлы отчётов и краткое описание к ним.
-- Файлы могут быть в форматах DOCX, PDF и др.
-- Структура отчёта по проектной практике приведена в файле [practice_report_template.docx](practice_report_template.docx).
+[report.docx](reports/report.docx) — Отчёт в формате .docx 
+[report.pdf](reports/report.pdf) — Отчёт в формате .pdf 
