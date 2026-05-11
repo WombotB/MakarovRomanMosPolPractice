@@ -9,6 +9,7 @@
 ## Сайт по ПД
 
 [Сайт проекта по ПД](https://wombotb.github.io/MakarovRomanMosPolPractice/site/virtual-lab.html)
+
 Код сайта проекта по ПД размещен в папке **site** в файле [virtual-lab.html](site/virtual-lab.html).
 
 ## Ответственный по проектной (учебной) практике
