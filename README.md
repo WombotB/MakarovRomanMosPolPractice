@@ -11,7 +11,7 @@
 
 ## Сайт по ПД
 
-Сайт проекта по ПД размещен в файле [virtual-lab.html](virtual-lab.html).
+Сайт проекта по ПД размещен в файле [virtual-lab.html](site/virtual-lab.html).
 
 ## Вариативная часть задания
 
