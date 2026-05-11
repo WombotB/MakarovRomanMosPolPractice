@@ -9,6 +9,10 @@
 
 Задание размещено в папке **task** в файле [README.md](task/README.md).
 
+## Сайт по ПД
+
+Сайт проекта по ПД размещен в файле [virtual-lab.html](virtual-lab.html).
+
 ## Вариативная часть задания
 
 Game: C++: Tetris tutorial in C++ platform independent focused in game logic for beginners
